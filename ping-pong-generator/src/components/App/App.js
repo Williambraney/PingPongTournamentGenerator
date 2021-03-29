@@ -1,4 +1,4 @@
-import NameAdd from "../NameAdd/NameAdd"
+import NameAdd from "../NameAdd"
 import NameList from "../NameList/NameList"
 
 const App = () => {
