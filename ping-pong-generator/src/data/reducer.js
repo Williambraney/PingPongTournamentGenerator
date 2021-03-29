@@ -1,5 +1,3 @@
-import initial from "./initial";
-
 
 const save = (state, action) => {
     const {name} = action
