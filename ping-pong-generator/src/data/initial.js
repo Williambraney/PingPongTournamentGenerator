@@ -1,5 +1,5 @@
 const initial = {   
-        name: ""
+        players: []
 }
 
 export default initial;
