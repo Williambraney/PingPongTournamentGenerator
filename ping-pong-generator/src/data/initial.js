@@ -1,5 +1,5 @@
 const initial = {   
-        
+        name: ""
 }
 
-export default initial
+export default initial;

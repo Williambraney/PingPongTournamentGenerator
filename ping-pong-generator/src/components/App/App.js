@@ -1,12 +1,13 @@
-import './App.css';
+import NameAdd from "../NameAdd/NameAdd"
 
 const App = () => {
 
     return (
         <>
-          <h1>This is Will's App</h1>
+        <NameAdd />
         </>
     )
 };
+
 
 export default App;
