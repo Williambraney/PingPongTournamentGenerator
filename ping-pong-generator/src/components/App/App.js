@@ -1,11 +1,14 @@
 import NameAdd from "../NameAdd"
-import NameList from "../NameList/NameList"
+import NameList from "../NameList"
+import Test from "../Test/Test"
 
 const App = () => {
 
     return (
         <>
         <NameAdd />
+        <NameList />
+        <Test />
         </>
     )
 };

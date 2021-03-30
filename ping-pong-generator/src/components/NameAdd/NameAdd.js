@@ -3,7 +3,7 @@ import React,  {Component} from "react"
 class NameAdd extends Component {
     constructor(props){
         super(props)
-        
+
     this.state = { 
         name: "",
         players: []
@@ -13,7 +13,7 @@ class NameAdd extends Component {
     this.handleName = this.handleName.bind(this);
     this.handleFormAdd = this.handleFormAdd.bind(this)
     // this.handleFormSubmit = this.handleFormSubmit(this)
-    this.hello = this.hello.bind(this)
+    this.handleFormSubmit = this.handleFormSubmit.bind(this)
 
 }
 
@@ -29,12 +29,12 @@ class NameAdd extends Component {
             players: [...this.state.players, this.state.name],
             name: ""
         })
-        console.log([...this.state.name])
+        console.log([...this.state.players])
     }
 
-    hello(e) {
+    handleFormSubmit(e) {
         e.preventDefault();
-        console.log("hello")
+        console.log("handleFormSubmit")
 
         let { players } = this.state;
 
@@ -55,7 +55,7 @@ class NameAdd extends Component {
     render() {
         const {name, players} = this.state
         const playersList = players.map((player, index) => (<li key={ index } >{ player }</li>))
-        const playerRandom = playersList.sort(() => Math.random() - 0.5) 
+        let time = players.sort(function() {return 0.5 - Math.random()})
         return (
             <>
             <h1>PongPing</h1>
@@ -73,9 +73,9 @@ class NameAdd extends Component {
                     </div>
             </form>
                 <div className="container--button">
-                    <button className="big-btn nes-btn is-success" onClick={ this.hello }>Start Tournament!</button>
+                    <button className="big-btn nes-btn is-success" onClick={ this.handleFormSubmit }>Start Tournament!</button>
+                    <ul>{time}</ul>
                 </div>
-
             </>
             
         );
