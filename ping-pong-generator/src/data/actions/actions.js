@@ -6,11 +6,27 @@
 //     }
 // }
 
-export const addPlayers = (players) => {
-    // turning array of strings, into an array of objects, with a name key
-    players = players.map(player => ({ name: player }));
-    return { 
-        type: "START",
-        players: players, 
-    };
+export const addPlayer = (player) => {
+return {
+type: "addPlayer",
+players: player,
+};
+};
+
+export const clearList = () => {
+     return {
+        type: "clearList",
+     };
+};
+
+export const generateTeams = () => {
+     return {
+          type: "generateTeams",
+     }
+};
+
+export const deletePlayer = () => {
+     return {
+          type: "deletePlayer",
+     }
 };

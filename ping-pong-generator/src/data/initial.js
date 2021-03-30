@@ -1,6 +1,5 @@
 const initial = {   
-        players: "",
-        name: "",
+        players: [],
         totalRounds: 0,
         matches: []
 }
