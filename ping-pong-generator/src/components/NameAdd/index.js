@@ -1,16 +1,20 @@
 import { connect } from 'react-redux';
 import NameAdd from './NameAdd';
-import { addPlayer } from '../../data/actions/actions';
+import { addPlayer, generateTeams, clearList, deletePlayer } from '../../data/actions/actions';
 
 const mapStateToProps = state => {
      return {
-          players: state.players, // we are assiging the prop players to the state value of players
+          players: state.players,
+          games: state.games // we are assiging the prop players to the state value of players
      };
 };
 
 const mapDispatchtoProps = dispatch => {
      return{
-          addPlayer: player => dispatch(addPlayer(player)), // we are dispatching the addPlayer method which is mentioned
+          addPlayer: player => dispatch(addPlayer(player)),
+          handleTeams: (data) => dispatch(generateTeams(data)),
+          handleDeleteLast: () => dispatch(deletePlayer()),
+          // we are dispatching the addPlayer method which is mentioned
           // in the NameAdd file
      }
 };

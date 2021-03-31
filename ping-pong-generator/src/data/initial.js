@@ -1,7 +1,10 @@
 const initial = {   
         players: [],
         totalRounds: 0,
-        matches: []
+        matches: [],
+        teamA: [],
+        teamB: [],
+        games: false
 }
 
 export default initial;
