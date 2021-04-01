@@ -22,3 +22,9 @@ export const deletePlayer = () => {
           type: "deletePlayer",
      }
 };
+
+export const startGame = () => {
+     return {
+          type: "startGame"
+     }
+}

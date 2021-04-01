@@ -1,16 +1,29 @@
 import NameAdd from "../NameAdd"
 import NameList from "../NameList"
-import InitialRound from "../InitialRound"
+import StarterPage from "../StarterPage/StarterPage"
 import Tournament from "../Tournament"
-const App = () => {
+const App = ({submitted, startGame}) => {
 
     return (
+        <> 
+        {!startGame ?
+        <>
+        <StarterPage />
+        </>
+        :
+        <>
+        {!submitted ?
         <>
         <NameAdd />
         <NameList />
-        <Tournament />
-        <InitialRound />
         </>
+        :
+        <>
+        <Tournament />
+        </>
+        }
+        </>}
+    </>
     )
 };
 

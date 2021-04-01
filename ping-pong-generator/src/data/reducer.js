@@ -5,7 +5,11 @@ const addPlayer = (state, action) => {
         players: [...state.players, action.players],
     };
 };
-
+const startGame = (state) => {
+     return {
+          startGame: state.startGame
+     }
+}
 const clearList = () => ({
      ...initial,
 });
@@ -49,6 +53,7 @@ const reducer = (state, action) => {
         case "clearList": return clearList();
         case "generateTeams": return generateTeams(state, action);
         case "deletePlayer": return deletePlayer(state, action);
+        case "startGame": return startGame(state, action)
         default: return state;
         // current state and the action object passed through from actions.js
     }

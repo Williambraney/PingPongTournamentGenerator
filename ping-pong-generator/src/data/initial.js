@@ -4,7 +4,10 @@ const initial = {
         matches: [],
         teamA: [],
         teamB: [],
-        games: false
+        games: false,
+        submitted: false,
+        startGame: false
+        
 }
 
 export default initial;
