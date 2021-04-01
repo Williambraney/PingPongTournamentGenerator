@@ -1,6 +1,6 @@
 import NameAdd from "../NameAdd"
 import NameList from "../NameList"
-import Test from "../Test"
+import InitialRound from "../InitialRound"
 import Tournament from "../Tournament"
 const App = () => {
 
@@ -9,7 +9,7 @@ const App = () => {
         <NameAdd />
         <NameList />
         <Tournament />
-        <Test />
+        <InitialRound />
         </>
     )
 };
