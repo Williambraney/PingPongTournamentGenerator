@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button } from 'react-bootstrap';
+import "../css/Settings.css"
 
 class PlayerList extends Component {
 
@@ -49,11 +50,11 @@ class PlayerList extends Component {
 
                     { players.length > 0 ? 
                          <div className="container">
-                              <div>
+                              <div className="nameListButtons">
                                    <Button 
                                         onClick={ this.handleDeleteLast }
                                         variant="outline-light" 
-                                        className="col-12 mt-2">
+                                        className="col-12 mt-2 ">
                                         Delete Last Player
                                    </Button>
                                    

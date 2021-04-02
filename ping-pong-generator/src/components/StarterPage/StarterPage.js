@@ -1,4 +1,5 @@
 import {Component} from "react"
+import { Link } from "react-router-dom";
 import "./StarterPage.css"
 class StarterPage extends Component {
     constructor(props) {
@@ -15,8 +16,17 @@ class StarterPage extends Component {
     render() {
         return (
             <div className = "container">
-            <h1>Hello </h1>
-            <button onClick={this.startGame}>Start the game</button>
+            <h1 className="title">Table Tennis Tournament Generator </h1>
+            <div class="wrapper">
+                <div class="left_wall"></div>
+                <div class="ball"></div>
+                <div class="right_wall"></div>
+                <div class="net"></div>
+                <div class="clear"></div>
+            </div>
+            <button className="buttonSpace">
+            <Link className="button" to="/Settings">Start Here</Link>
+            </button>
             </div>
         );
     }

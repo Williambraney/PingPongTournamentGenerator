@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import "../css/Settings.css"
 
 class PlayerForm extends Component {
 
@@ -44,14 +45,13 @@ class PlayerForm extends Component {
                                    <Form.Control 
                                         type="text" 
                                         placeholder="Enter player name..." 
-                                        className="m-1"
                                         value={ this.state.name } 
                                         onChange={ this.handleChangeName }  
                                    />
                                    <Button 
                                         variant="outline-light" 
                                         type="submit" 
-                                        className="m-1">
+                                        className="buttonAdd">
                                         Add
                                    </Button>
                               </div>

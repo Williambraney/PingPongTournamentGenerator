@@ -1,17 +1,18 @@
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import NameAdd from "../NameAdd"
 import NameList from "../NameList"
 import StarterPage from "../StarterPage/StarterPage"
 import Tournament from "../Tournament"
-const App = ({submitted, startGame}) => {
+const App = ({submitted}) => {
 
     return (
-        <> 
-        {!startGame ?
+        <Router> 
         <>
+        <Route exact path="/">
         <StarterPage />
+        </Route>
         </>
-        :
-        <>
+        <Route exact path="/Settings">
         {!submitted ?
         <>
         <NameAdd />
@@ -22,8 +23,8 @@ const App = ({submitted, startGame}) => {
         <Tournament />
         </>
         }
-        </>}
-    </>
+        </Route>
+    </Router>
     )
 };
 

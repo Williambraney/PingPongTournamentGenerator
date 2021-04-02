@@ -1,0 +1,43 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    font-family: 'Walter Turncoat', cursive; 
+    background-color: transparent;
+    color: white;
+    width: 25vw;
+    height: 5vw;
+    border:white solid 0.3vw;
+    border-radius: 0.7rem;
+    font-size: 2vw;
+
+}
+
+.buttonAdd{
+    color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align: center;
+    font-size: 4vw;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    padding-left: 1rem;
+
+
+}
+.buttonAdd:hover{
+    transform: scale(1.2);
+}
+::placeholder {
+    color: white;
+}
+
+.wrapper {
+    border-bottom: none;
+}
