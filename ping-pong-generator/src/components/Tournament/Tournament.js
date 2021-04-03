@@ -37,7 +37,7 @@ class Tournament extends Component {
           });
           return (
                <>
-                    <div className="wrapper">
+                    <div className="wrapper3">
                          <div className="container">
                               {generateInitialPairs}
                          </div>

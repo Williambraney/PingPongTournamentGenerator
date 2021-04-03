@@ -38,11 +38,11 @@ class PlayerList extends Component {
           return (
                <>
                     <div className="container player-list">
-                         <h2>Current Players</h2> 
-                         <ul className="list-unstyled">
+                         <h2 className="headerPlayers">Current Players:</h2> 
+                         <ul>
                               { players.map((value, index) => (
                                    <li key={ index }>
-                                        <h3>{ value }</h3>
+                                        <h3 className="names">{ value }</h3>
                                    </li> 
                               ))}
                          </ul>
@@ -50,18 +50,18 @@ class PlayerList extends Component {
 
                     { players.length > 0 ? 
                          <div className="container">
-                              <div className="nameListButtons">
+                              <div className="nameListButtonsGroup">
                                    <Button 
                                         onClick={ this.handleDeleteLast }
                                         variant="outline-light" 
-                                        className="col-12 mt-2 ">
+                                        className="nameListButtons ">
                                         Delete Last Player
                                    </Button>
                                    
                                    <Button 
                                         onClick={ this.handleClear }
                                         variant="outline-light" 
-                                        className="col-12 mt-2">
+                                        className="nameListButtons">
                                         Clear Players
                                    </Button>
                               </div>
@@ -70,7 +70,7 @@ class PlayerList extends Component {
                                    <Button 
                                         onClick={ this.handleGenerate }
                                         variant="outline-light" 
-                                        className="col-12 mt-2">
+                                        className="nameListButtons">
                                         Generate Teams
                                    </Button>
                               : null }
