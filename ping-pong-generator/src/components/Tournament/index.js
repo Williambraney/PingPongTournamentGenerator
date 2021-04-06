@@ -5,7 +5,8 @@ const mapStateToProps = state => {
      return {
           teamA: state.teamA,
           teamB: state.teamB,
-          players: state.players
+          players: state.players,
+          matches: state.matches
      }
 };
 

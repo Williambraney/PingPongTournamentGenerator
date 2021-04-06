@@ -28,3 +28,14 @@ export const startGame = () => {
           type: "startGame"
      }
 }
+export const generateInitialPairs = () => {
+     return {
+          type: "generateInitialPairs"
+     }
+}
+
+export const generateWinners = () => {
+     return {
+          type: "generateWinners"
+     }
+}

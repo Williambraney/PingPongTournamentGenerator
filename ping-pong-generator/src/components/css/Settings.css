@@ -16,7 +16,7 @@ ul {
     margin-bottom: inherit;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
+    grid-column-gap: 3vw;
     
 }
 ul>li:nth-child(odd){
@@ -51,7 +51,7 @@ input[type="text" i] {
 
 }
 
-.buttonAdd{
+.score{
     color: white;
     text-decoration: none;
     font-family: 'Walter Turncoat', cursive;
@@ -63,7 +63,7 @@ input[type="text" i] {
     transition: transform .2s;
 
 }
-.buttonAdd:hover{
+.score:hover{
     transform: scale(1.2);
 }
 ::placeholder {
@@ -89,5 +89,53 @@ input[type="text" i] {
     transition: transform .2s;
 }
 .nameListButtons:hover{
+    transform: scale(1.2);
+}
+.score{
+    color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align:center;
+    font-size: 4vw;
+    border: none;
+    padding-left: 1rem;
+    transition: transform .2s;
+}
+.score:hover{
+    transform: scale(1.2);
+}
+.playerButtonRound{
+    color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align:center;
+    font-size: 5vw;
+    border: none;
+    padding-left: 1rem;
+    transition: transform .2s;
+}
+.playerButtonRound:hover{
+    transform: scale(1.2);
+}
+.initialRoundContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35%
+}
+.buttonAdd {
+    color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align:center;
+    font-size: 3vw;
+    border: none;
+    padding-left: 1rem;
+    transition: transform .2s;
+}
+.buttonAdd:hover{
     transform: scale(1.2);
 }

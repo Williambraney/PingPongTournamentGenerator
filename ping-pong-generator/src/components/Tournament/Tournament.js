@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Button } from 'react-bootstrap';
+import "../css/Tournament.css"
+import {Link} from "react-router-dom"
 
 class Tournament extends Component {
 
@@ -8,38 +10,35 @@ class Tournament extends Component {
           this.state = { 
                teamA: this.props.teamA,
                teamB: this.props.teamB,
-               players: this.props.players
+               players: this.props.players,
+               matches: this.props.matches
           };
 
           this.handleShuffle = this.handleShuffle.bind(this);
      }
 
-          handleShuffle(){
-          this.props.handleShuffle();
+     handleShuffle(){
+     this.props.handleShuffle();
      }
+
+
      render() {
-          let players = this.props.players
-          const splitPlayers = players.reduce(function(result, value, index, array) {
-                    if (index % 2 === 0)
-                    result.push(array.slice(index, index + 2));
-                    return result;
-               }, []);
-          const generateInitialPairs = splitPlayers.map((array, index) => {
+          let matches = this.props.matches
+          const displayMatches = matches.map((match, index) => {
                const matchOrder = index + 1;
-               const playerOne = array[0];
-               const playerTwo = array[1];
-               
-               if(array.length === 2){
-                    return <h1 key={index}>Match {matchOrder} is {playerOne} vs {playerTwo}</h1>
-               }
-               
-               return null;
-          });
+               const playerOne = match[0];
+               const playerTwo = match[1];
+               const playerOneButton = <button className="playerButton">{playerOne}</button>
+               const playerTwoButton = <button className="playerButton">{playerTwo}</button>
+               return <h1 className="pairs" key={index}>Match {matchOrder} : {playerOneButton} vs {playerTwoButton}</h1>
+          })
+
           return (
                <>
-                    <div className="wrapper3">
+                    <div>
                          <div className="container">
-                              {generateInitialPairs}
+                              <h1 className="header">The Games are...</h1>
+                              {displayMatches}
                          </div>
                     </div>
 
@@ -47,10 +46,10 @@ class Tournament extends Component {
                          <Button 
                               onClick={ this.handleShuffle }
                               variant="outline-light" 
-                              className="col-12 mt-2">
+                              className="shuffleButton">
                               Re-Shuffle
                          </Button>
-
+                         <button className="shuffleButton"><Link to="/initialround">Start Tournament</Link></button>
                     </div>
                </>
           )

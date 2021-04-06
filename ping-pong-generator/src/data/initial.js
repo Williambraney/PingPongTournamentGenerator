@@ -1,13 +1,12 @@
 const initial = {   
         players: [],
-        totalRounds: 0,
-        matches: [],
-        teamA: [],
-        teamB: [],
-        games: false,
+        games: 0,
         submitted: false,
-        startGame: false
-        
+        startGame: false,
+        winner: 0,
+        matches: [],
+        winners: [],
+        round: false
 }
 
 export default initial;

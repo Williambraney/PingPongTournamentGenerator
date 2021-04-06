@@ -27,8 +27,16 @@
 .clear{
   clear:both;
 }​
+.div.net {
+    width: 2rem;
+    height: 18.7rem;
+    border-right: 2px solid white;
+    position: absolute;
+    padding-left: 17rem;
+    z-index: -1;
+}
 .net {
-width: 2rem;
+    width: 2rem;
     height: 18.7rem;
     border-right: 2px solid white;
     position: absolute;
