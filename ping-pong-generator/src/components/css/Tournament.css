@@ -22,15 +22,7 @@
     transition: transform .2s;
     margin-top: 4vw;
 }
-/* .playerButton:focus {
-    border-bottom: solid 0.7vw white;
-} */
-/* .playerButton:target {
-    border-bottom: solid 0.7vw white;
-} */
-/* .playerButton:active {
-    border-bottom: solid 0.7vw white;
-} */
+
 .shuffleButton{
     color: white;
     text-decoration: none;
@@ -54,4 +46,13 @@
 .TournamentHeading {
     font-size: 4vw;
     margin-right: 3vw;
+}
+
+.generateWinners {
+    margin-top: inherit;
+    margin-bottom: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    font-size: 2.5vw;
 }

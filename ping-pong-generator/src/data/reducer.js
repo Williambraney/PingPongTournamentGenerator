@@ -1,4 +1,6 @@
 import initial from "./initial"
+
+
 const addPlayer = (state, action) => {
     return {
         ...state,
@@ -37,7 +39,8 @@ function shuffle(arr) {
 
 const generateWinners = (state) => ({
      ...state,
-     winners:shuffle(state.winners),
+     winners:[],
+     players: shuffle(state.winners),
      round:true,
      games: state.games / 2,
      matches: state.winners.reduce(function(matches, value, index, winners) {

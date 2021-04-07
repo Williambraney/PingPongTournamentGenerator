@@ -94,13 +94,16 @@ class InitialRound extends Component {
         <div className="initialRoundContainer">
           <h1 className="TournamentHeading">{ howManyRounds(games) }</h1>
           <div>{displayMatches}</div>
-          <h1 className="pairs">The winners are: {nameArrayMap}</h1>
+          <h1 className="TournamentHeading">The Winners Are:</h1>
+          <h1 className="generateWinners">{nameArrayMap}</h1>
           <h1 onClick={this.generateWinners}className="playerButton">Next Round</h1>
       </div>:
         <div className="initialRoundContainer">
           <h1 className="TournamentHeading">{ howManyRounds(games) }</h1>
           <div>{displayMatches}</div>
-          <h1 onClick={this.generateWinners}className="playerButton">Next Round</h1>
+          <h1 className="TournamentHeading">The Winners Are:</h1>
+          <h1 className="generateWinners">{nameArrayMap}</h1>
+          <h1 onClick={this.generateWinners}className="generateWinners">Next Round</h1>
           </div>}
       </>
     );
