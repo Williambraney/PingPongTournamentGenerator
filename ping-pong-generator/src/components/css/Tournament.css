@@ -1,0 +1,58 @@
+.header {
+    text-decoration: underline;
+    font-size: 4vw;
+}
+.headerSub {
+    text-decoration: underline;
+    font-size: 2vw;
+}
+.pairs {
+    margin-top: inherit;
+    margin-bottom: inherit;
+}
+.playerButton {
+        color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align:center;
+    font-size: 4vw;
+    border: none;
+    padding-left: 1rem;
+    transition: transform .2s;
+    margin-top: 4vw;
+}
+
+.shuffleButton{
+    color: white;
+    text-decoration: none;
+    font-family: 'Walter Turncoat', cursive;
+    background-color: transparent;
+    text-align:center;
+    font-size: 4vw;
+    border: none;
+    padding-left: 1rem;
+    transition: transform .2s;
+    margin-top: 4vw;
+
+}
+.shuffleButton:hover{
+    transform: scale(1.2);
+}
+.playerButton:hover{
+    transform: scale(1.2);
+}
+
+.TournamentHeading {
+    font-size: 4vw;
+    margin-right: 3vw;
+}
+
+.generateWinners {
+    margin-top: inherit;
+    margin-bottom: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    font-size: 2.5vw;
+}
