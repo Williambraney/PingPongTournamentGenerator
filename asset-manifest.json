@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Williambraney/PingPongTournamentGenerator/static/css/main.83f0acfc.chunk.css",
+    "main.js": "/Williambraney/PingPongTournamentGenerator/static/js/main.13f1a41b.chunk.js",
+    "main.js.map": "/Williambraney/PingPongTournamentGenerator/static/js/main.13f1a41b.chunk.js.map",
+    "runtime-main.js": "/Williambraney/PingPongTournamentGenerator/static/js/runtime-main.3396c740.js",
+    "runtime-main.js.map": "/Williambraney/PingPongTournamentGenerator/static/js/runtime-main.3396c740.js.map",
+    "static/js/2.849d1fe2.chunk.js": "/Williambraney/PingPongTournamentGenerator/static/js/2.849d1fe2.chunk.js",
+    "static/js/2.849d1fe2.chunk.js.map": "/Williambraney/PingPongTournamentGenerator/static/js/2.849d1fe2.chunk.js.map",
+    "static/js/3.d0dd92e2.chunk.js": "/Williambraney/PingPongTournamentGenerator/static/js/3.d0dd92e2.chunk.js",
+    "static/js/3.d0dd92e2.chunk.js.map": "/Williambraney/PingPongTournamentGenerator/static/js/3.d0dd92e2.chunk.js.map",
+    "index.html": "/Williambraney/PingPongTournamentGenerator/index.html",
+    "static/css/main.83f0acfc.chunk.css.map": "/Williambraney/PingPongTournamentGenerator/static/css/main.83f0acfc.chunk.css.map",
+    "static/js/2.849d1fe2.chunk.js.LICENSE.txt": "/Williambraney/PingPongTournamentGenerator/static/js/2.849d1fe2.chunk.js.LICENSE.txt",
+    "static/media/StarterPage.css": "/Williambraney/PingPongTournamentGenerator/static/media/pingPong.d76b2b5e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3396c740.js",
+    "static/js/2.849d1fe2.chunk.js",
+    "static/css/main.83f0acfc.chunk.css",
+    "static/js/main.13f1a41b.chunk.js"
+  ]
+}
