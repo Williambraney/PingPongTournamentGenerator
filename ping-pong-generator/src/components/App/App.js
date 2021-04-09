@@ -3,17 +3,12 @@ import NameAdd from "../NameAdd"
 import NameList from "../NameList"
 import StarterPage from "../StarterPage/StarterPage"
 import Tournament from "../Tournament"
-import InitialRound from "../InitialRound"
-import Games from "../Games"
-// import Test from "../TestPage/Test"
+import Round from "../Round"
 const App = ({submitted}) => {
 
     return (
         <Router> 
         <>
-        {/* <Route exact path="/test">
-        <Test />
-        </Route> */}
         <Route exact path="/">
         <StarterPage />
         </Route>
@@ -30,8 +25,7 @@ const App = ({submitted}) => {
             </>
         }
         </Route>
-        <Route path="/initialround" component={InitialRound} /> 
-        <Route path="/Games" component={Games} /> 
+        <Route path="/round" component={Round} /> 
     </Router>
     )
 };

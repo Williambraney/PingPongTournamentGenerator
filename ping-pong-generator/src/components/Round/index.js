@@ -5,7 +5,7 @@ import {
   generateWinners,
   addWinner,
 } from "../../data/actions/actions";
-import InitialRound from "./InitialRound";
+import Round from "./Round";
 const mapStateToProps = (state) => {
   return {
     players: state.players,
@@ -25,4 +25,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(InitialRound);
+export default connect(mapStateToProps, mapDispatchToProps)(Round);

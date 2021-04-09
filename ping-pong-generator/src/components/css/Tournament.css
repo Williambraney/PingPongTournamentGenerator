@@ -1,17 +1,17 @@
 .header {
-    text-decoration: underline;
-    font-size: 4vw;
+text-decoration: underline;
+font-size: 4vw;
 }
 .headerSub {
-    text-decoration: underline;
-    font-size: 2vw;
+text-decoration: underline;
+font-size: 2vw;
 }
 .pairs {
-    margin-top: inherit;
-    margin-bottom: inherit;
+margin-top: inherit;
+margin-bottom: inherit;
 }
 .playerButton {
-        color: white;
+    color: white;
     text-decoration: none;
     font-family: 'Walter Turncoat', cursive;
     background-color: transparent;
