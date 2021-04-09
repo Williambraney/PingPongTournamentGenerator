@@ -49,7 +49,7 @@ class Tournament extends Component {
                               className="shuffleButton">
                               Re-Shuffle
                          </Button>
-                         <button className="shuffleButton"><Link to="/round">Start Tournament</Link></button>
+                         <button className="shuffleButton"><Link to="/Round">Start Tournament</Link></button>
                     </div>
                </>
           )

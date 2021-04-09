@@ -1,5 +1,5 @@
 import { Component } from "react";
-class InitialRound extends Component {
+class Round extends Component {
   constructor(props) {
     super(props);
 
@@ -8,7 +8,6 @@ class InitialRound extends Component {
   }
 
   playerNameClickHandler = (name) => {
-    console.log("name handler", name);
     if (this.props.winners.length === this.props.matches.length) {
       return;
     }
@@ -96,7 +95,7 @@ class InitialRound extends Component {
         ? "Semi Finals"
         : games === 4
         ? "Quarter Finals"
-        : `Tournament Begins`;
+        : `Tournament Is Underway`;
     };
 
     return (
@@ -117,4 +116,4 @@ class InitialRound extends Component {
   }
 }
 
-export default InitialRound;
+export default Round;

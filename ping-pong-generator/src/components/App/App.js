@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import NameAdd from "../NameAdd"
 import NameList from "../NameList"
-import StarterPage from "../StarterPage/StarterPage"
+import StarterPage from "../StarterPage"
 import Tournament from "../Tournament"
 import Round from "../Round"
 const App = ({submitted}) => {
@@ -25,7 +25,7 @@ const App = ({submitted}) => {
             </>
         }
         </Route>
-        <Route path="/round" component={Round} /> 
+        <Route path="/Round" component={Round} /> 
     </Router>
     )
 };
