@@ -56,3 +56,11 @@ margin-bottom: inherit;
     grid-column-gap: 3vw;
     font-size: 2.5vw;
 }
+
+.nextRound {
+    padding-left: 15vw;
+    transition: transform .2s;
+}
+.nextRound:hover{
+    transform: scale(1.2);
+}

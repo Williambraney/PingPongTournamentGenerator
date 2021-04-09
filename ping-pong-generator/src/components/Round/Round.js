@@ -25,7 +25,6 @@ class Round extends Component {
       this.setState({
         counter: this.state.counter + 1, // adds one to the counter
       });
-      console.log(this.state.counter);
     }
   };
 
@@ -36,7 +35,6 @@ class Round extends Component {
       this.setState({
         counter2: this.state.counter2 + 1, // adds one to the counter
       });
-      console.log();
     }
   }
   changeColor(e) {
@@ -48,7 +46,6 @@ class Round extends Component {
   };
 
   render() {
-    console.log("render");
     let games = this.props.games;
     let matches = this.props.matches;
 
@@ -102,12 +99,13 @@ class Round extends Component {
       <div className="initialRoundContainer">
         <h1 className="TournamentHeading">{howManyRounds(games)}</h1>
         <div>{displayMatches}</div>
+        <h1 className="TournamentHeading">Select the winners names above</h1>
         <h1 className="TournamentHeading">The Winners Are:</h1>
         <h1 className="generateWinners">{nameArrayMap}</h1>
         {this.props.isEndTournament ? (
-          <p>This is the end, the winner is {this.props.winners[0]}</p>
+          <h1>{this.props.winners[0]} has won the tournament!!</h1>
         ) : (
-          <h1 onClick={this.handleNextRound} className="generateWinners">
+          <h1 onClick={this.handleNextRound} className="nextRound">
             Next Round
           </h1>
         )}

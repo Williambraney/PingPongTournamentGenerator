@@ -41,6 +41,7 @@ class PlayerForm extends Component {
                     <Form className="container" onSubmit={ this.handleSubmit }>
                          <Form.Group controlId="playerName">
                               <h2>Add Players</h2>
+                              <h2>Minimum 4 players</h2>     
                               <div className="d-flex">
                                    <Form.Control 
                                         type="text" 
@@ -55,7 +56,6 @@ class PlayerForm extends Component {
                                         Add
                                    </Button>
                               </div>
-                              <p className="error">{ this.state.error }</p> 
                          </Form.Group>
                     </Form>
                </>
