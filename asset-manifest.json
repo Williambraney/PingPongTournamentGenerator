@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d70b3b3.chunk.css",
-    "main.js": "/static/js/main.54a6205e.chunk.js",
-    "main.js.map": "/static/js/main.54a6205e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7af5a043.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7af5a043.js.map",
-    "static/js/2.849d1fe2.chunk.js": "/static/js/2.849d1fe2.chunk.js",
-    "static/js/2.849d1fe2.chunk.js.map": "/static/js/2.849d1fe2.chunk.js.map",
-    "static/js/3.d0dd92e2.chunk.js": "/static/js/3.d0dd92e2.chunk.js",
-    "static/js/3.d0dd92e2.chunk.js.map": "/static/js/3.d0dd92e2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.3d70b3b3.chunk.css.map": "/static/css/main.3d70b3b3.chunk.css.map",
-    "static/js/2.849d1fe2.chunk.js.LICENSE.txt": "/static/js/2.849d1fe2.chunk.js.LICENSE.txt",
-    "static/media/StarterPage.css": "/static/media/pingPong.d76b2b5e.jpg"
+    "main.css": "/PingPongTournamentGenerator/static/css/main.dcfbbc58.chunk.css",
+    "main.js": "/PingPongTournamentGenerator/static/js/main.27dc2107.chunk.js",
+    "main.js.map": "/PingPongTournamentGenerator/static/js/main.27dc2107.chunk.js.map",
+    "runtime-main.js": "/PingPongTournamentGenerator/static/js/runtime-main.a7653af0.js",
+    "runtime-main.js.map": "/PingPongTournamentGenerator/static/js/runtime-main.a7653af0.js.map",
+    "static/js/2.6ea7c109.chunk.js": "/PingPongTournamentGenerator/static/js/2.6ea7c109.chunk.js",
+    "static/js/2.6ea7c109.chunk.js.map": "/PingPongTournamentGenerator/static/js/2.6ea7c109.chunk.js.map",
+    "static/js/3.d0dd92e2.chunk.js": "/PingPongTournamentGenerator/static/js/3.d0dd92e2.chunk.js",
+    "static/js/3.d0dd92e2.chunk.js.map": "/PingPongTournamentGenerator/static/js/3.d0dd92e2.chunk.js.map",
+    "index.html": "/PingPongTournamentGenerator/index.html",
+    "static/css/main.dcfbbc58.chunk.css.map": "/PingPongTournamentGenerator/static/css/main.dcfbbc58.chunk.css.map",
+    "static/js/2.6ea7c109.chunk.js.LICENSE.txt": "/PingPongTournamentGenerator/static/js/2.6ea7c109.chunk.js.LICENSE.txt",
+    "static/media/StarterPage.css": "/PingPongTournamentGenerator/static/media/pingPong.d76b2b5e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7af5a043.js",
-    "static/js/2.849d1fe2.chunk.js",
-    "static/css/main.3d70b3b3.chunk.css",
-    "static/js/main.54a6205e.chunk.js"
+    "static/js/runtime-main.a7653af0.js",
+    "static/js/2.6ea7c109.chunk.js",
+    "static/css/main.dcfbbc58.chunk.css",
+    "static/js/main.27dc2107.chunk.js"
   ]
 }
