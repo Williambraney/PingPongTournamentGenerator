@@ -4,6 +4,7 @@ import {
   generateInitialPairs,
   generateWinners,
   addWinner,
+  newTournament,
 } from "../../data/actions/actions";
 import Round from "./Round";
 const mapStateToProps = (state) => {
@@ -22,6 +23,7 @@ const mapDispatchToProps = (dispatch) => {
     generateWinners: () => dispatch(generateWinners()),
     endTournament: () => dispatch(endTournament()),
     addWinner: (winner) => dispatch(addWinner(winner)),
+    newTournament: () => dispatch(newTournament())
   };
 };
 

@@ -52,3 +52,9 @@ export const addWinner = (winner) => {
     winner,
   };
 };
+
+export const newTournament = () => {
+  return {
+    type: "newTournament",
+  };
+};

@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import "../css/Settings.css"
 
-class PlayerForm extends Component {
+class NameAdd extends Component {
 
      constructor(props) {
           super(props);
@@ -41,7 +41,7 @@ class PlayerForm extends Component {
                     <Form className="container" onSubmit={ this.handleSubmit }>
                          <Form.Group controlId="playerName">
                               <h2 className="addHeader" >Add Players</h2>
-                              <h2 className="addHeader">Minimum 4 players</h2>     
+                              <h2 className="addHeader">Minimum 4 players. Players needs to be a power of 2 (i.e. 4, 8, 16, 32 ...)</h2>   
                               <div className="d-flex">
                                    <Form.Control 
                                         type="text" 
@@ -63,4 +63,4 @@ class PlayerForm extends Component {
      }; 
 };
 
-export default PlayerForm;
+export default NameAdd;

@@ -46,6 +46,8 @@ margin-bottom: inherit;
 .TournamentHeading {
     font-size: 4vw;
     margin-right: 3vw;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .generateWinners {
@@ -61,8 +63,17 @@ margin-bottom: inherit;
     padding-left: 15vw;
     transition: transform .2s;
 }
+
+.winnersTag {
+    font-size: 8vw;
+    justify-items: center;
+    margin-left: 20%;
+    margin-top:20%;
+    color: yellow;
+}
 .nextRound:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 
@@ -70,4 +81,18 @@ margin-bottom: inherit;
     .initialRoundContainer {
         margin-left: 20%;
     }
+}
+
+.fireworks {
+      object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.restart {
+    text-align: center;
+    color: yellow;
 }

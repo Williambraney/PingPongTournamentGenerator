@@ -33,7 +33,7 @@ h2 {
     margin-bottom: inherit;
 }
 .d-flex{
-    padding-left: 5rem;
+    padding-left: 14rem;
 }
 
 input[type="text" i] {
@@ -137,6 +137,10 @@ input[type="text" i] {
 }
 .buttonAdd:hover{
     transform: scale(1.2);
+}
+.addHeader {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

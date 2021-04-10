@@ -59,6 +59,12 @@ const generateTeams = (state) => ({
   }, []),
 });
 
+const reset = () => {
+    return {
+        ...initial,
+    }
+}
+
 const reducer = (state, action) => {
   // depending on what the actions type property is, we can do different things with it
   switch (action.type) {
@@ -86,6 +92,8 @@ const reducer = (state, action) => {
         ...state,
         winners: [...state.winners, action.winner],
       };
+    case "newTournament": 
+    return reset(state)
     default:
       return state;
     // current state and the action object passed through from actions.js

@@ -1,11 +1,6 @@
 import { Component } from "react";
+import {Link} from "react-router-dom"
 class Round extends Component {
-  constructor(props) {
-    super(props);
-
-    this.handleClickincrease = this.handleClickincrease.bind(this);
-    this.handleClickincrease2 = this.handleClickincrease2.bind(this);
-  }
 
   playerNameClickHandler = (name) => {
     if (this.props.winners.length === this.props.matches.length) {
@@ -18,33 +13,14 @@ class Round extends Component {
   };
   generateWinners = () => this.props.generateWinners();
 
-  handleClickincrease = () => {
-    if (this.state.counter < 21) {
-      // if the counter is less than the props max(which is 20) add one
-      // but stop at 20
-      this.setState({
-        counter: this.state.counter + 1, // adds one to the counter
-      });
-    }
-  };
-
-  handleClickincrease2() {
-    if (this.state.counter < 21) {
-      // if the counter is less than the props max(which is 20) add one
-      // but stop at 20
-      this.setState({
-        counter2: this.state.counter2 + 1, // adds one to the counter
-      });
-    }
-  }
-  changeColor(e) {
-    e.target.style.color = "black";
-  }
-
   handleNextRound = () => {
     this.props.generateWinners();
   };
 
+  newTournament = () => {
+    this.props.newTournament();
+    window.location.reload()
+  }
   render() {
     let games = this.props.games;
     let matches = this.props.matches;
@@ -94,22 +70,32 @@ class Round extends Component {
         ? "Quarter Finals"
         : `Tournament Is Underway`;
     };
-
+    
     return (
-      <div className="initialRoundContainer">
-        <h1 className="TournamentHeading">{howManyRounds(games)}</h1>
+      <>
+      {this.props.isEndTournament ? (
+        <>
+          <h1 className= "winnersTag">{this.props.winners[0]} has won the tournament!!</h1>
+          <video className="fireworks"  muted autoPlay loop id="video" playbackRate= "0.5">
+            <source src={process.env.PUBLIC_URL + "/fireworks.mp4"} type="video/mp4"></source>
+            </video>
+            <h1 onClick={this.newTournament} className="restart"><Link className="restart" to="/">Restart Tournament</Link></h1>
+            </>
+            ) : (
+              <>
+          <div className="initialRoundContainer">
+          <h1 className="TournamentHeading">{howManyRounds(games)}</h1>
         <div>{displayMatches}</div>
         <h1 className="TournamentHeading">Select the winners names</h1>
         <h1 className="TournamentHeading">The Winners Are:</h1>
         <h1 className="generateWinners">{nameArrayMap}</h1>
-        {this.props.isEndTournament ? (
-          <h1>{this.props.winners[0]} has won the tournament!!</h1>
-        ) : (
-          <h1 onClick={this.handleNextRound} className="nextRound">
+          <h1 onClick={this.handleNextRound } className="nextRound">
             Next Round
           </h1>
-        )}
       </div>
+          </>
+        )}
+        </>
     );
   }
 }
