@@ -1,4 +1,4 @@
-.html, body {
+body {
     margin: 0;
     height:100%;
     width: 100%;
@@ -119,4 +119,16 @@
 .title {
     text-align: center;
     font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+  body {
+    background-image: none;
+    background-color: grey;
+  }
+  .container {
+    margin-left: 0;
+  }
 }

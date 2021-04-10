@@ -138,3 +138,20 @@ input[type="text" i] {
 .buttonAdd:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .addHeader {
+        font-size: 7vw;
+    }
+    .buttonAdd {
+        font-size: 7vw;
+    }
+    input[type="text" i] {
+        height: 8vw;
+        width: 30vw;
+    }
+    .d-flex {
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+    }
+}

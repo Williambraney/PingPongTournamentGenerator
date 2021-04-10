@@ -64,3 +64,10 @@ margin-bottom: inherit;
 .nextRound:hover{
     transform: scale(1.2);
 }
+
+
+@media (max-width: 768px) {
+    .initialRoundContainer {
+        margin-left: 20%;
+    }
+}
