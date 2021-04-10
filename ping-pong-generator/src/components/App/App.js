@@ -9,7 +9,7 @@ const App = ({submitted}) => {
     return (
         <Router> 
         <>
-        <Route exact path="/">
+        <Route exact path="/PingPongTournamentGenerator">
         <StarterPage />
         </Route>
         </>

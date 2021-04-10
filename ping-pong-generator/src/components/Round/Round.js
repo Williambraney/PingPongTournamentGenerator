@@ -79,7 +79,7 @@ class Round extends Component {
           <video className="fireworks"  muted autoPlay loop id="video" playbackRate= "0.5">
             <source src={process.env.PUBLIC_URL + "/fireworks.mp4"} type="video/mp4"></source>
             </video>
-            <h1 onClick={this.newTournament} className="restart"><Link className="restart" to="/">Restart Tournament</Link></h1>
+            <h1 onClick={this.newTournament} className="restart"><Link className="restart" to="/PingPongTournamentGenerator">Restart Tournament</Link></h1>
             </>
             ) : (
               <>

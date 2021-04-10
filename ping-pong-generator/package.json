@@ -1,5 +1,6 @@
 {
   "name": "ping-pong-generator",
+  "homepage": "https://Williambraney.github.io/PingPongTournamentGenerator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
