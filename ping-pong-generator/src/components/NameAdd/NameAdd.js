@@ -25,10 +25,17 @@ class NameAdd extends Component {
 
 
      handleSubmit(e){
+          let name = this.state.name
           e.preventDefault();
+          if (name !==  ""){
                this.props.addPlayer(this.state.name);
                this.setState({name: ""});
                this.setState({games: true})
+          } else {
+               this.setState({
+                    nameError:true
+               })
+          }
      };
      // this method when submitted will be using the addPlayer method, this is mentioned in MapDispatchToProps 
      // pulled in as a prop to this.state.name which is an empty string.
@@ -36,12 +43,16 @@ class NameAdd extends Component {
 
      
      render() {
+          let {nameError} = this.state
+          let nameErrorMessage = "Enter a valid Name!";
+
           return (
                <>
                     <Form className="container" onSubmit={ this.handleSubmit }>
                          <Form.Group controlId="playerName">
                               <h2 className="addHeader" >Add Players</h2>
                               <h2 className="addHeader2">Minimum 4 players. <span className="multiples">(Multiples of four)</span></h2>   
+                                   <p className="error">{nameError ? nameErrorMessage : null}</p>
                               <div className="d-flex">
                                    <Form.Control 
                                         type="text" 

@@ -44,12 +44,20 @@ font-size: 3vw;
 .playerButton:hover{
     transform: scale(1.2);
 }
-
+.TournamentHeadingRounds{
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+.error {
+    text-align: center;
+    font-size: 2vw;
+}
 .TournamentHeading {
     font-size: 3vw;
     margin-right: 3vw;
     margin-bottom: 0;
     margin-top: 0;
+    margin-left: 2vw;
 }
 
 .generateWinners {
@@ -62,7 +70,7 @@ font-size: 3vw;
 }
 
 .nextRound {
-    padding-left: 15vw;
+    padding-left: 1vw;
     color: yellow;
     margin-top: 3vw;
     transition: transform .2s;

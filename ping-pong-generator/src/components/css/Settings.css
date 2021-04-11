@@ -148,7 +148,8 @@ input[type="text" i] {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 40%
+    align-items: center;
+    margin-left: 20%
 }
 .buttonAdd {
     color: rgba(255, 217, 0, 0.87);
