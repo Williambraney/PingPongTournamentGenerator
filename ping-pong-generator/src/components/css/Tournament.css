@@ -1,6 +1,7 @@
 .header {
 text-decoration: underline;
 font-size: 4vw;
+margin-bottom: 0;
 }
 .headerSub {
 text-decoration: underline;
@@ -9,6 +10,7 @@ font-size: 2vw;
 .pairs {
 margin-top: inherit;
 margin-bottom: inherit;
+font-size: 3vw;
 }
 .playerButton {
     color: white;
@@ -16,7 +18,7 @@ margin-bottom: inherit;
     font-family: 'Walter Turncoat', cursive;
     background-color: transparent;
     text-align:center;
-    font-size: 4vw;
+    font-size: 3vw;
     border: none;
     padding-left: 1rem;
     transition: transform .2s;
@@ -24,16 +26,16 @@ margin-bottom: inherit;
 }
 
 .shuffleButton{
-    color: white;
+    color: yellow;
     text-decoration: none;
     font-family: 'Walter Turncoat', cursive;
     background-color: transparent;
     text-align:center;
-    font-size: 4vw;
+    font-size: 3vw;
     border: none;
     padding-left: 1rem;
     transition: transform .2s;
-    margin-top: 4vw;
+    margin-top: 3vw;
 
 }
 .shuffleButton:hover{
@@ -44,7 +46,7 @@ margin-bottom: inherit;
 }
 
 .TournamentHeading {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-right: 3vw;
     margin-bottom: 0;
     margin-top: 0;
@@ -61,13 +63,14 @@ margin-bottom: inherit;
 
 .nextRound {
     padding-left: 15vw;
+    color: yellow;
+    margin-top: 3vw;
     transition: transform .2s;
 }
 
 .winnersTag {
-    font-size: 6vw;
-    justify-items: center;
-    margin-left: 20%;
+    font-size: 5vw;
+    text-align: center;
     margin-top:20%;
     color: yellow;
 }

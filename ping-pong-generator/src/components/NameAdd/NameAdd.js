@@ -41,7 +41,7 @@ class NameAdd extends Component {
                     <Form className="container" onSubmit={ this.handleSubmit }>
                          <Form.Group controlId="playerName">
                               <h2 className="addHeader" >Add Players</h2>
-                              <h2 className="addHeader">Minimum 4 players. Players needs to be a power of 2 (i.e. 4, 8, 16, 32 ...)</h2>   
+                              <h2 className="addHeader2">Minimum 4 players. <span className="multiples">(Multiples of four)</span></h2>   
                               <div className="d-flex">
                                    <Form.Control 
                                         type="text" 

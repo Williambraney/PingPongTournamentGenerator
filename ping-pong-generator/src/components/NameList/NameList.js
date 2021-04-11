@@ -70,7 +70,7 @@ class PlayerList extends Component {
                                    <Button 
                                         onClick={ this.handleGenerate }
                                         variant="outline-light" 
-                                        className="nameListButtons">
+                                        className="nameListButtonsGenerate">
                                         Generate Teams
                                    </Button>
                               : null }

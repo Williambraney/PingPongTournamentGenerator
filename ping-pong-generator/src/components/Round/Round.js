@@ -86,7 +86,7 @@ class Round extends Component {
           <div className="initialRoundContainer">
           <h1 className="TournamentHeading">{howManyRounds(games)}</h1>
         <div>{displayMatches}</div>
-        <h1 className="TournamentHeading">Select the winners names</h1>
+        <h1 className="TournamentHeading2">Select the winners names</h1>
         <h1 className="TournamentHeading">The Winners Are:</h1>
         <h1 className="generateWinners">{nameArrayMap}</h1>
           <h1 onClick={this.handleNextRound } className="nextRound">
